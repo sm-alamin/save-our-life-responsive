@@ -1,0 +1,62 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+/* Variables */
+:root{
+    --primary-font: 'Inter', sans-serif;
+    --white: #FFFFFF;
+    --background-black:#545050;
+    --background-magenta:rgb(205, 79, 79);
+    
+}
+/* Common Part */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+/* header section */
+.header{
+    width: 100%;
+    height: 600px;
+    background-color: var(--background-black);
+    background-image: url("../images/donation1.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding:200px 20px;
+    color: var(--white);
+}
+.header h3{
+    font-weight: 700;
+    font-size: 65px;
+    text-align: center;  
+}
+.header p{
+    font-size: 18px; 
+}
+.primary-btn{
+    margin-top: 30px;
+    padding: 15px 25px;
+    color: var(--white);
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--background-magenta);
+}
+/* *******************************************Media Query********************************** */
+/* Responsive for mobile device */
+@media screen and (max-width: 576px) {
+    /* header */
+    .header h3{
+        font-size: 40px;  
+    }
+    .header p{
+        font-size: 12px;  
+    }
+}
+/* Responsive for tablet device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+}
